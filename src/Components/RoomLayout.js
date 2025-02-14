@@ -25,15 +25,15 @@ const ClickableDots = ({ interactiveObjects, onObjectClick }) => {
   })
 };
 
-const RoomLayout = ({ imageUrl, interactiveObjects, onObjectClick, ref }) => {
+const RoomLayout = React.forwardRef(({ ref, imageUrl, interactiveObjects, onObjectClick }) => {
   const divRef = React.useRef(null);
   const [imgDimensions, setImgDimensions] = React.useState({ width: 0, height: 0 });
 
   React.useEffect(() => {
-    if (ref.current) {
+    if (ref?.current) {
       setImgDimensions({
-        width: ref.current.naturalWidth,
-        height: ref.current.naturalHeight,
+        width: ref?.current.naturalWidth,
+        height: ref?.current.naturalHeight,
       });
     }
   }, [ref]);
@@ -62,6 +62,6 @@ const RoomLayout = ({ imageUrl, interactiveObjects, onObjectClick, ref }) => {
       <ClickableDots interactiveObjects={interactiveObjects} onObjectClick={onObjectClick} />
     </div>
   );
-};
+});
 
 export default RoomLayout;
