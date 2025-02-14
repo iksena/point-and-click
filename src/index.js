@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,57 +1,65 @@
 import React from 'react';
-import { useHover } from '@mantine/hooks';
 
-const ObjectArea = ({ object, onObjectClick }) => {
-  const { hovered, ref } = useHover();
-  let style = { border: hovered ? '2px solid red' : '2px solid transparent' };
-  if (object.area.type === 'rect') {
-    const [x, y, width, height] = object.area.coords;
-    style = { 
-      ...style, 
-      position: 'absolute', 
-      left: `${x}px`, 
-      top: `${y}px`, 
-      width: `${width}px`, 
-      height: `${height}px`, 
-      cursor: 'pointer' 
-    };
-  } else if (object.area.type === 'polygon') {
-    const coords = object.area.coords;
-    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-    coords.forEach(([x, y]) => {
-      minX = Math.min(minX, x);
-      minY = Math.min(minY, y);
-      maxX = Math.max(maxX, x);
-      maxY = Math.max(maxY, y);
+const ClickableDots = ({ interactiveObjects, onObjectClick }) => {
+  return interactiveObjects.map(object => {
+    let sumX = 0, sumY = 0;
+    const numPoints = object.area.coords.length;
+  
+    object.area.coords.forEach(([x, y]) => {
+      sumX += x;
+      sumY += y;
     });
-    style = { 
-      ...style, 
-      position: 'absolute', 
-      left: `${minX}px`, 
-      top: `${minY}px`, 
-      width: `${maxX - minX}px`, 
-      height: `${maxY - minY}px`, 
-      cursor: 'pointer', 
-      backgroundColor: 'rgba(255, 255, 255, 0.1)' 
-    };
-  }
+  
+    const centerX = sumX / numPoints;
+    const centerY = sumY / numPoints;
 
-  return (
-    <div
-      ref={ref}
-      key={object.id}
-      style={style}
-      onClick={() => onObjectClick(object)}
-      title={object.name} 
-    ></div>
-  );
-}
+    return (
+      <div
+        key={object.id}
+        className="dotLocation"
+        style={{ position: 'absolute', left: centerX, top: centerY, cursor: 'pointer' }}
+        onClick={() => onObjectClick(object)}
+        title={object.name}
+      ></div>
+    );
+  })
+};
 
 const RoomLayout = ({ imageUrl, interactiveObjects, onObjectClick, ref }) => {
+  const divRef = React.useRef(null);
+  const [imgDimensions, setImgDimensions] = React.useState({ width: 0, height: 0 });
+
+  React.useEffect(() => {
+    if (ref.current) {
+      setImgDimensions({
+        width: ref.current.naturalWidth,
+        height: ref.current.naturalHeight,
+      });
+    }
+  }, [ref]);
+
   return (
-    <div>
-      <img ref={ref} src={imageUrl} alt="Room Layout" useMap="#roomMap" />
-      {interactiveObjects.map(object => <ObjectArea key={object.id} object={object} onObjectClick={onObjectClick} />)}
+    <div 
+      ref={divRef}
+      style={{
+        position: 'relative',
+        width: imgDimensions.width,
+        height: imgDimensions.height,
+      }}>
+      <img ref={ref} src={imageUrl} alt="Room Layout" useMap="#roomMap"/>
+      <map name="roomMap">
+        {interactiveObjects.map(object => (
+          <area
+            key={object.id}
+            shape={object.area.type === 'rect' ? 'rect' : 'poly'}
+            coords={object.area.coords.flat().join(',')}
+            alt={object.name}
+            onClick={() => onObjectClick(object)}
+            style={{ cursor: 'pointer' }}
+          />
+        ))}
+      </map>
+      <ClickableDots interactiveObjects={interactiveObjects} onObjectClick={onObjectClick} />
     </div>
   );
 };

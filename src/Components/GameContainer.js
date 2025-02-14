@@ -1,31 +1,34 @@
 import React, { useState } from 'react';
-import { Text, Code, Group, Box } from '@mantine/core';
+import { Text, Code } from '@mantine/core';
 import { useMouse } from '@mantine/hooks';
 import RoomLayout from './RoomLayout';
 import ObjectDetailsPopup from './ObjectDetailsPopup'; // Create this component
 
-function GameContainer() {
-  const { ref, x, y } = useMouse();
-  const [interactiveObjects, setInteractiveObjects] = useState([{
-    id: 'desk-1',
-    name: 'Desk',
-    area: { type: 'rect', coords: [50, 60, 100, 80] }, // x, y, width, height
-    details: 'A wooden desk with a few papers on it.'
+const interactiveObjects = [
+  {
+    id: 'cow',
+    name: 'Cowy',
+    area: { type: 'polygon', coords: [[190, 325], [239, 326], [200, 390], [241, 389]] },
+    details: { text: 'Sapi is a cow in Indonesian.' }
   },
   {
-    id: 'bookcase-1',
-    name: 'Bookcase',
-    area: { type: 'polygon', coords: [[450, 225], [625, 200], [470, 564], [632, 530]] }, // Array of [x, y] points
-    details: 'A tall bookcase filled with old books.'
-  }]);
+    id: 'worm',
+    name: 'Ncacing',
+    area: { type: 'polygon', coords: [[247, 373], [284, 358], [254, 404], [300, 391]] },
+    details: { text: 'Ncacingans', type: 'images', images: ['/images/ncacing/1.jpeg', '/images/ncacing/2.heic', '/images/ncacing/3.heic'] }
+  }
+];
+
+function GameContainer() {
+  const { ref, x, y } = useMouse();
   const [selectedObjectDetails, setSelectedObjectDetails] = useState(null);
 
   const handleObjectClick = (object) => {
-    setSelectedObjectDetails(object.details); // Set details to show in popup
+    setSelectedObjectDetails(object.details);
   };
 
   const handleClosePopup = () => {
-    setSelectedObjectDetails(null); // Hide popup
+    setSelectedObjectDetails(null);
   };
 
   return (
@@ -35,7 +38,7 @@ function GameContainer() {
       </Text>
       <RoomLayout
         ref={ref}
-        imageUrl="/images/layout.jpg" // Path to your image in public folder
+        imageUrl="/images/layout.png"
         interactiveObjects={interactiveObjects}
         onObjectClick={handleObjectClick}
       />
