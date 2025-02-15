@@ -1,5 +1,5 @@
 import './App.css';
-import GameContainer from './Components/GameContainer';
+import GameContainer from './components/GameContainer';
 import { createTheme, MantineProvider } from '@mantine/core';
 
 const theme = createTheme({
