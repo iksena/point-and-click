@@ -3,7 +3,7 @@ import { Text, Code } from '@mantine/core';
 import { useMouse } from '@mantine/hooks';
 import RoomLayout from './RoomLayout';
 import ObjectDetailsPopup from './ObjectDetailsPopup'; 
-import interactiveObjects from '../Data/interactiveObjects.json';
+import interactiveObjects from '../data/interactiveObjects.json';
 import BackgroundMusic from './BackgroundMusic';
 
 function GameContainer() {
