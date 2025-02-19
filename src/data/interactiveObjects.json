@@ -1,56 +1,60 @@
 [
   {
     "id": "cow",
-    "name": "Cowy",
+    "name": "Aku besamasama ayang",
     "area": { "type": "polygon", "coords": [[190, 325], [239, 326], [200, 390], [241, 389]] },
-    "details": { "text": "Sapi is a cow in Indonesian." }
+    "details": { "text": "Maaci ayang udah selalu dukung aku sampe bisa dapet lpdp dan kuliah di oz. Semua karna doa dan semangat dari ayang. Aku mau sering ketemu ayang dan terus besamasama ayang yah. Makasi udah mau nunggu aku. I love you so much ❤️💕❤️💕" }
   },
   {
     "id": "worm",
-    "name": "Ncacing",
+    "name": "Happy Birthday Ncacingku",
     "area": { "type": "polygon", "coords": [[247, 373], [284, 358], [254, 404], [300, 391]] },
-    "details": { "text": "Ncacingans", "type": "images", "images": ["/images/ncacing/1s.jpeg", "/images/ncacing/2.heic", "/images/ncacing/3.heic"] }
+    "details": { 
+      "text": "Yey ayang udah 23. Semoga ayang makin happy, makin sayang aku, makin tenang dan ga banyak pikiran. Maaf ya aku ga ajak dinner dulu, ayang beli kado yah. Nanti kita dinner di oz dan eropa lagi hihiw. I love you princessku, sayangku, cintaku ❤️❤️👸🏼", 
+      "type": "images", 
+      "images": ["/images/ncacing/1s.jpeg", "/images/ncacing/2.heic", "/images/ncacing/3.heic"] 
+    }
   },
   {
     "id": "lamp",
     "name": "Lampu",
     "area": { "type": "polygon", "coords": [[0, 440], [20, 440], [0, 300], [20, 300]] },
-    "details": { "text": "Sapi is a cow in Indonesian." }
+    "details": { "text": "Ayang selalu ✨menerangi✨ hari-hari aku. Aku mau epon ayang terus jadi aku hepi tiap hari. Ayang juga hepi ya epon aku jangan besedi ya sayang ❤️❤️❤️" }
   },
   {
     "id": "cup",
-    "name": "Cangkir",
+    "name": "Voucher mam enak",
     "area": { "type": "polygon", "coords": [[35, 420], [60, 420], [35, 440], [60, 440]] },
-    "details": { "text": "Sapi is a cow in Indonesian." }
+    "details": { "text": "Ayang mau minum dan mam apapun kasih tunjuk ini ke aku yah. Hari ini hari ayang. Setiap hari, hari ayang hihiw ✨💕" }
   },
   {
     "id": "poster-1",
     "name": "Happy Valentine's Day",
     "area": { "type": "polygon", "coords": [[0, 170], [60, 170], [0, 270], [6, 270]] },
-    "details": { "text": "Sapi is a cow in Indonesian." }
+    "details": { "text": "Selamat hari valentine ayangkuw cantikuw. Kamu harus tau aku selalu sayang dan cinta kamu ya ❤️❤️❤️❤️❤️❤️" }
   },
   {
     "id": "poster-2",
     "name": "We will meet soon",
     "area": { "type": "polygon", "coords": [[90, 120], [150, 120], [90, 220], [150, 220]] },
-    "details": { "text": "Betemu dan besamasamayang" }
+    "details": { "text": "Kita akan betemu dan besamasama lagi ayang. Aku mau pegang tangan ayang sambil keliling dunia 💚🤍❤️" }
   },
   {
     "id": "phone",
-    "name": "Facetime",
+    "name": "Voucher skincare",
     "area": { "type": "polygon", "coords": [[170, 660], [210, 660], [170, 680], [219, 680]] },
-    "details": { "text": "Betemu dan besamasamayang" }
+    "details": { "text": "Kalau butuh skincare ayang kasih tunjuk ini yah. Kalau ga mau juga gapapa. Aku selalu sayang ayang 🤍🤍🤍" }
   },
   {
     "id": "paper",
-    "name": "CPNS",
+    "name": "Yey ayang jadi ASN",
     "area": { "type": "polygon", "coords": [[290, 717], [290, 737], [330, 717], [330, 737]] },
-    "details": { "text": "Betemu dan besamasamayang" }
+    "details": { "text": "Sayangku selamat ya kamu udah jadi ASN di Jabodetabek aamiin. Semangat ayang jangan takut dan ragu lagi, ayang tetap hepi yah jangan stress. Santai aja kalau udah jadi ASN banyak2 bobo hihiw 💕💕💕" }
   },
   {
     "id": "doll",
-    "name": "Kado",
+    "name": "Hihiw",
     "area": { "type": "polygon", "coords": [[366, 10], [386, 10], [366, 70], [386, 70]] },
-    "details": { "text": "Betemu dan besamasamayang" }
+    "details": { "text": "Ayang mau oleh-oleh apa ayangkuw?" }
   }
 ]
