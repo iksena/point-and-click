@@ -1,14 +1,36 @@
-import React, { useState } from 'react';
-import { Text, Code } from '@mantine/core';
+import React, { useState, useEffect } from 'react';
+import { Text, Code, TextInput, Modal } from '@mantine/core';
 import { useMouse } from '@mantine/hooks';
 import RoomLayout from './RoomLayout';
 import ObjectDetailsPopup from './ObjectDetailsPopup'; 
 import interactiveObjects from '../data/interactiveObjects.json';
 import BackgroundMusic from './BackgroundMusic';
 
+function Login({validateLogin}) {
+  const [value, setValue] = useState('');
+
+  useEffect(() => {
+    if(value === '11/08/2002'){
+      validateLogin?.(true);
+    }
+  }
+  , [value, validateLogin]);
+
+
+  return (
+    <TextInput
+      label="Input password"
+      placeholder="Password"
+      value={value}
+      onChange={(event) => setValue(event.currentTarget.value)}
+    />
+  );
+}
+
 function GameContainer() {
   const { ref, x, y } = useMouse();
   const [selectedObject, setSelectedObject] = useState(null);
+  const [isLogin, setIsLogin] = useState(false);
 
   const handleObjectClick = (object) => {
     setSelectedObject(object);
@@ -20,6 +42,20 @@ function GameContainer() {
 
   return (
     <div>
+      {!isLogin && 
+        <Modal
+        opened={!isLogin}
+        title="Login"
+        fullScreen
+        radius={0}
+        transitionProps={{ transition: 'fade', duration: 200 }}
+        closeOnEscape={false}
+        closeOnClickOutside={false}
+        withCloseButton={false}
+        >
+          <Login validateLogin={setIsLogin} />
+        </Modal>
+      }
       <BackgroundMusic />
       <RoomLayout
         ref={ref}
