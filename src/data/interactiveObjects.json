@@ -3,58 +3,136 @@
     "id": "cow",
     "name": "Aku besamasama ayang",
     "area": { "type": "polygon", "coords": [[190, 325], [239, 326], [200, 390], [241, 389]] },
-    "details": { "text": "Maaci ayang udah selalu dukung aku sampe bisa dapet lpdp dan kuliah di oz. Semua karna doa dan semangat dari ayang. Aku mau sering ketemu ayang dan terus besamasama ayang yah. Makasi udah mau nunggu aku. I love you so much ❤️💕❤️💕" }
+    "details": { 
+      "text": "Maaci ayang udah selalu dukung aku sampe bisa dapet lpdp dan kuliah di oz. Semua karna doa dan semangat dari ayang. Aku mau sering ketemu ayang dan terus besamasama ayang yah. Makasi udah mau nunggu aku dan mau jadi jodoh aku. I love you so much ❤️💕❤️💕",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/BHKLkSrR/IMG-0991.jpg", 
+        "https://i.ibb.co/3ypk67Qn/IMG-2018.jpg", 
+        "https://i.ibb.co/NgJdcLgk/IMG-8415.jpg",
+        "https://i.ibb.co/M5PkrKvx/IMG-7454.jpg",
+        "https://i.ibb.co/KcHmJjSQ/IMG-2203.jpg",
+        "https://i.ibb.co/TBDXz6Wm/IMG-1558.jpg"
+      ]
+    }
   },
   {
     "id": "worm",
     "name": "Happy Birthday Ncacingku",
     "area": { "type": "polygon", "coords": [[247, 373], [284, 358], [254, 404], [300, 391]] },
     "details": { 
-      "text": "Yey ayang udah 23. Semoga ayang makin happy, makin sayang aku, makin tenang dan ga banyak pikiran. Maaf ya aku ga ajak dinner dulu, ayang beli kado yah. Nanti kita dinner di oz dan eropa lagi hihiw. I love you princessku, sayangku, cintaku ❤️❤️👸🏼", 
+      "text": "Yey ayang udah 23. Semoga ayang makin happy, makin sayang aku, makin tenang dan ga banyak pikiran. Maaf ya aku ga ajak dinner dulu, ayang beli kado yah. Nanti kita dinner di oz dan eropa lagi hihiw. I love you princessku, my universe, sayangku, cintaku ❤️❤️👸🏼", 
       "type": "images", 
-      "images": ["/images/ncacing/1s.jpeg", "/images/ncacing/2.heic", "/images/ncacing/3.heic"] 
+      "images": [
+        "https://i.ibb.co/LB6trJj/IMG-1361.jpg",
+        "https://i.ibb.co/JFzTLTHm/IMG-2829.jpg",
+        "https://i.ibb.co/kg5VSpD3/IMG-2903.jpg",
+        "https://i.ibb.co/j9rwPBg3/IMG-3194.jpg",
+        "https://i.ibb.co/VWpY5D74/jarjit.jpg"
+      ] 
     }
   },
   {
     "id": "lamp",
     "name": "Lampu",
     "area": { "type": "polygon", "coords": [[0, 440], [20, 440], [0, 300], [20, 300]] },
-    "details": { "text": "Ayang selalu ✨menerangi✨ hari-hari aku. Aku mau epon ayang terus jadi aku hepi tiap hari. Ayang juga hepi ya epon aku jangan besedi ya sayang ❤️❤️❤️" }
+    "details": { 
+      "text": "Ayang selalu ✨menerangi✨ hari-hari aku. Aku mau epon ayang terus jadi aku hepi tiap hari. Ayang juga hepi ya epon aku jangan besedi ya sayang ❤️❤️❤️",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/KxRC904p/IMG-3216.jpg",
+        "https://i.ibb.co/ymXyngQ6/IMG-6350.jpg",
+        "https://i.ibb.co/vxYCTD8m/IMG-9357.jpg",
+        "https://i.ibb.co/spwZt4Sx/IMG-0804.jpg"
+      ]
+    }
   },
   {
     "id": "cup",
     "name": "Voucher mam enak",
     "area": { "type": "polygon", "coords": [[35, 420], [60, 420], [35, 440], [60, 440]] },
-    "details": { "text": "Ayang mau minum dan mam apapun kasih tunjuk ini ke aku yah. Hari ini hari ayang. Setiap hari, hari ayang hihiw ✨💕" }
+    "details": { 
+      "text": "Ayang mau minum dan mam apapun kasih tunjuk ini ke aku yah. Hari ini hari ayang. Setiap hari, hari ayang hihiw ✨💕",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/LDzqVNVJ/IMG-1937.jpg",
+        "https://i.ibb.co/0ynRNrjC/IMG-6974.jpg",
+        "https://i.ibb.co/rGvQTtqg/IMG-2346.jpg",
+        "https://i.ibb.co/YKGNSMj/IMG-6716.jpg",
+        "https://i.ibb.co/pBw521gV/IMG-6802.jpg"
+      ]
+    }
   },
   {
     "id": "poster-1",
     "name": "Happy Valentine's Day",
     "area": { "type": "polygon", "coords": [[0, 170], [60, 170], [0, 270], [6, 270]] },
-    "details": { "text": "Selamat hari valentine ayangkuw cantikuw. Kamu harus tau aku selalu sayang dan cinta kamu ya ❤️❤️❤️❤️❤️❤️" }
+    "details": { 
+      "text": "Selamat hari valentine ayangkuw cantikuw. Kamu harus tau aku selalu sayang dan cinta kamu ya ❤️❤️❤️❤️❤️❤️",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/qLPhYq0t/IMG-6991.jpg",
+        "https://i.ibb.co/SX3VVd1Z/IMG-1222.jpg",
+        "https://i.ibb.co/5WQyd80S/IMG-2067.jpg",
+        "https://i.ibb.co/VY8wc5M4/IMG-6645.jpg",
+        "https://i.ibb.co/j96RDP4M/IMG-7428.jpg"
+      ]}
   },
   {
     "id": "poster-2",
     "name": "We will meet soon",
     "area": { "type": "polygon", "coords": [[90, 120], [150, 120], [90, 220], [150, 220]] },
-    "details": { "text": "Kita akan betemu dan besamasama lagi ayang. Aku mau pegang tangan ayang sambil keliling dunia 💚🤍❤️" }
+    "details": { 
+      "text": "Kita akan betemu dan besamasama lagi ayang. Aku mau pegang tangan ayang sambil keliling dunia 💚🤍❤️",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/KpszRKzS/IMG-3204.jpg",
+        "https://i.ibb.co/bgByZXyR/IMG-8529.jpg",
+        "https://i.ibb.co/wx8prw9/IMG-7418.jpg",
+        "https://i.ibb.co/39Dv2RF2/IMG-7089.jpg",
+        "https://i.ibb.co/mVhQKznD/IMG-6924.jpg",
+        "https://i.ibb.co/FqB79TJc/IMG-7654.jpg"
+      ]}
   },
   {
     "id": "phone",
     "name": "Voucher skincare",
     "area": { "type": "polygon", "coords": [[170, 660], [210, 660], [170, 680], [219, 680]] },
-    "details": { "text": "Kalau butuh skincare ayang kasih tunjuk ini yah. Kalau ga mau juga gapapa. Aku selalu sayang ayang 🤍🤍🤍" }
+    "details": { 
+      "text": "Kalau butuh skincare ayang kasih tunjuk ini yah. Kalau ga mau juga gapapa. Aku selalu sayang ayang 🤍🤍🤍",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/8D6RzMPd/45349a29-da1d-4732-baf4-cfc78eea3fe7.jpg",
+        "https://i.ibb.co/6R2qs1m0/IMG-7033.jpg",
+        "https://i.ibb.co/rRrfPqtj/IMG-2119.jpg",
+        "https://i.ibb.co/nhsp4ym/IMG-2431.jpg"
+      ]
+    }
   },
   {
     "id": "paper",
     "name": "Yey ayang jadi ASN",
     "area": { "type": "polygon", "coords": [[290, 717], [290, 737], [330, 717], [330, 737]] },
-    "details": { "text": "Sayangku selamat ya kamu udah jadi ASN di Jabodetabek aamiin. Semangat ayang jangan takut dan ragu lagi, ayang tetap hepi yah jangan stress. Santai aja kalau udah jadi ASN banyak2 bobo hihiw 💕💕💕" }
+    "details": { 
+      "text": "Sayangku selamat ya kamu udah jadi ASN di Jabodetabek aamiin. Semangat ayang jangan takut dan ragu lagi, ayang tetap hepi yah jangan stress. Santai aja kalau udah jadi ASN banyak2 bobo hihiw 💕💕💕",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/KphyYd6r/IMG-0529.jpg",
+        "https://i.ibb.co/d4QLf3bN/IMG-0721.jpg",
+        "https://i.ibb.co/fYs1qvhC/IMG-8834.jpg"
+      ]}
   },
   {
     "id": "doll",
     "name": "Hihiw",
     "area": { "type": "polygon", "coords": [[366, 10], [386, 10], [366, 70], [386, 70]] },
-    "details": { "text": "Ayang mau oleh-oleh apa ayangkuw?" }
+    "details": { 
+      "text": "Ayang mau oleh-oleh apa ayangkuw?",
+      "type": "images",
+      "images": [
+        "https://i.ibb.co/HDr0wHCd/IMG-9971.jpg",
+        "https://i.ibb.co/Ng9HyFsg/IMG-9410.jpg"
+      ]
+    }
   }
 ]
